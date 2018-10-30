@@ -135,8 +135,9 @@
 此音乐播放器数据全部来自 QQ 音乐，接口改变了就需要修改 `jsonp` 和 `axios` 代码
 ios微信不能播放的解决方法
 在package.json中,锁死vue和vue-template-complier的版本为2.3.3,去掉版本号前的^,依赖文件夹node_modules里删掉2个原来版本的文件夹,cnpm i => 测试 => success~!
-https://blog.csdn.net/qq_31393401/article/details/79246735
-https://github.com/DDFE/DDFE-blog/issues/24   ios微信不能播放的解决方法
+参考网址：https://blog.csdn.net/qq_31393401/article/details/79246735
+ios微信不能播放的解决方法
+https://github.com/DDFE/DDFE-blog/issues/24 
 给vue降级，vue2.5+不适用
 ## 安装与运行
 
@@ -151,9 +152,8 @@ npm run dev //服务端运行 访问 http://localhost:8080
 
 npm run build  //项目打包 
 ```
-nodejs运行服务端
+nodejs运行服务端方法
 打包之后请看下面的node运行
-
 修改config/index.js的端口9000
 node prod.server.js  nodejs用法
 http://www.cnblogs.com/zhaobao1830/p/6431287.html
