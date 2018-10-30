@@ -1,0 +1,22 @@
+https://blog.csdn.net/xiayiye5/article/details/79487560?utm_source=blogxgwz0
+
+
+
+src/common/js/song.js
+
+改成下面的
+export function createSong(musicData) {
+  return new Song({
+    id: musicData.songid,
+    mid: musicData.songmid,
+    singer: filterSinger(musicData.singer),
+    name: musicData.songname,
+    album: musicData.albumname,
+    duration: musicData.interval,
+    image: `https://y.gtimg.cn/music/photo_new/T002R300x300M000${musicData.albummid}.jpg?max_age=2592000`,
+    url: `http://ws.stream.qqmusic.qq.com/C100${musicData.strMediaMid}.m4a?fromtag=0&guid=126548448`
+    // url: `http://ws.stream.qqmusic.qq.com/${musicData.songid}.m4a?fromtag=46`
+    // url: `http://ws.stream.qqmusic.qq.com/C100000QCwge3B6Ad1.m4a?fromtag=0&guid=126548448`
+    // url: `http://dl.stream.qqmusic.qq.com/C400002Sx6Dq0fpPJG.m4a?guid=721073960&vkey=195BD9876F5F4503B511008C3B572486CB74865C75B1AC2088AD3624E39A6014BD6C843BEBCEAA69E82A8814352C47552C6B93C75B1818B4&uin=0&fromtag=38`
+  })
+}
