@@ -142,7 +142,7 @@ https://github.com/DDFE/DDFE-blog/issues/24
 ## 安装与运行
 
 ```
-https://github.com/18318553760/vue-music.git
+git clone https://github.com/18318553760/vue-music.git
 
 cd vue-music
 
